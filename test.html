@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="//yandex.st/jquery/fancybox/2.1.4/jquery.fancybox.css" />
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/ui-lightness/jquery-ui.css" type="text/css"
+        media="all" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="//media.lpgenerator.ru/uploads/images/jquery.tools.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script src="//yandex.st/jquery/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+    <script>
+        jq_181 = jQuery.noConflict(true);
+    </script>
+    <style>
+        html.fancybox-lock,
+        body.fancybox-lock {
+            overflow: auto !important;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        #slider_1 .container,
+        #slider_1 .navi,
+        #slider_1 .scrollable,
+        #slider_1 .item {
+            width: 280px;
+            padding: 0 25px;
+        }
+
+        #slider_1 .container,
+        #slider_1 .scrollable {
+            height: 1450px;
+        }
+
+        #slider_1 a.disabled {
+            visibility: hidden !important;
+        }
+
+        #slider_1 .container {
+            margin: 0 auto;
+            clear: both;
+            position: relative;
+        }
+
+        #slider_1 .scrollable {
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #slider_1 .scrollable .items {
+            width: 1000em;
+            position: absolute;
+            clear: both;
+        }
+
+        #slider_1 .items .item {
+            float: left;
+        }
+
+        #slider_1 a.browse {
+            cursor: pointer;
+            margin: 0;
+            width: 39px;
+            height: 75px;
+            position: absolute;
+            top: 341px;
+            border: none;
+            border-radius: 0;
+            background: url(//media.lpgenerator.ru/images/10285/snav_1.png#size_78x75) 0 0 no-repeat;
+        }
+
+        #slider_1 a.left {
+            z-index: 100;
+        }
+
+        #slider_1 a.right {
+            background-position: -39px 0;
+            right: 0px;
+        }
+
+        #slider_1 .items .img {
+            margin: 0;
+            display: block;
+            text-align: center;
+            margin: 30px 0 100px 0;
+        }
+
+        #slider_1 .items .img img {
+            border: 1px solid #c4c0c4;
+        }
+
+        #slider_1 .items .content {
+            float: right;
+            margin: 0 0 0 0px;
+        }
+
+        #slider_1 .items .content .name {
+            font-size: 18px;
+            float: left;
+        }
+
+        #slider_1 .items .content .text {
+            font-size: 14px;
+            line-height: 16px;
+            margin: 16px 0 0 0;
+            text-align: justify;
+            font-family: roboto, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        jq_181(function ($) {
+            $("#slider_1 .scrollable")
+                .scrollable({
+                    circular: true,
+                    speed: 1000
+                })
+            $('.fancybox').fancybox();
+        });
+    </script>
+    <div id="slider_1">
+        <div class="container">
+            <a class="prev browse left"></a>
+            <div class="scrollable" id="scrollable">
+                <div class="items">
+
+                    <div class="item">
+
+                        <div class="content">
+                            <div class="name">
+
+                                <p style="color: rgb(255, 255, 255); font-size: 20px; line-height: 20px; font-family: Roboto, sans-serif; font-weight: 300; text-align: center;"><strong><span
+                                            style="color:#000000;">Как в 3 раза увеличить выручку монтажной компании и
+                                            сократить на 40% расходы на рекламу и менеджеров за счет автоматизации</span></strong></p>
+
+                                <div class="img"><img src="https://media.lpgenerator.ru/images/319440/arch-podsvet.jpg"
+                                        width="300" /></div>
+
+                            </div>
+                            <div class="text">
+
+                                <p><strong>Проблема</strong>: большие сложные проекты, где необходима слаженная работа
+                                    команды, защита проектов, расчеты и согласования на нескольких этапах.</span></span></p>
+
+                                <p>Работа ведется в Екселе, нет определенного порядка выполнения работ, частая путаница
+                                    и срывы сроков из за несогласованности действий. Основная боль — очень мало
+                                    клиентов доходят до продажи.</span></span></p>
+
+                                <p><strong>Задача</strong>: описать бизнес процессы, внедрить на их основе систему
+                                    учета АмоСрм, настроить бизнес процесс и автоматические задачи менеджерам,
+                                    настроить финансовую отчетность. Провести анализ и понять, как увеличить конверсию
+                                    в продажи.</span></p>
+
+                                <p><strong>Решение</strong>: за 3 недели, совместно с собственниками бизнеса были
+                                    разработаны и описаны в ТЗ бизнес процессы. За 2 недели полностью внедрили АмоСрм,
+                                    настроили отчетность, задачи, необходимы для анализа поля. Внедрили сквозную
+                                    бизнес-аналитику Roistat для рекламных каналов, настроили 2-двухстороннюю
+                                    интеграцию с АмоСрм. Внесли старые данные в АмоСрм и замерили текущие показатели,
+                                    составили воронку.</span></p>
+
+                                <p><strong> Проведя анализ показателей выявили </strong> показатели самого «Идеального
+                                    клиента». Соотнесли данные из этих сделок с запросами из рекламы, выбрали кластеры
+                                    запросов. Это позволило понять, по каким запросам идут «идеальные клиенты».</span></p>
+
+                                <p> Затем выбрали эти пучки в отдельную группу и подняли их максимально в выдаче, а
+                                    нецелевые запросы полностью отключили.</span></p>
+
+                                <p><strong>Это позволило сократить расходы </strong> на рекламу и лишних сотрудников
+                                    примерно на 40-60% и в целом стало намного меньше ненужной работы и расходов и
+                                    намного больше выручки, т.к. конверсия в продажи выросла в 3 раза, а средний чек на
+                                    20% — с 450 т.р. до 550 т.р.)</span></p>
+
+                                <p> <strong>Сейчас </strong> компания работает как единый механизм, все сделки и задачи
+                                    выполняются вовремя. Клиентский сервис значительно улучшился. Значительно
+                                    перевыполняется план продаж по выручке) </span></p>
+
+                                <p><strong> В планах</strong> — составить более подробный портрет целевого клиента,
+                                    увеличить конверсию в продажи до 40-45% за счет более детальной работы с клиентом,
+                                    расширить охват на Гугл и Соц. сети, настроить рассылку. </span></p>
+
+
+
+                                <p><strong>Стоимость проекта 182 000 р. Наши услуги окупились за 2 месяц</strong></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+
+                        <div class="content">
+                            <div class="name">
+                                <p style="color: rgb(255, 255, 255); font-size: 20px; line-height: 20px; font-family: Roboto, sans-serif; font-weight: 300; text-align: center;"><strong><span
+                                            style="color:#000000;">Как увеличить продажи в 3 раза за 6 месяцев
+                                            и выгодно продавать кабельный лоток</span></strong></p>
+                                <div class="img"><img src="//media.lpgenerator.ru/images/319440/clip2net160917211026mi0thy0.png"
+                                        width="300"></div>
+                            </div>
+
+                            <div class="text">
+                                <p><strong>Проблема</strong>: не окупается реклама, очень высокая стоимость заявки.
+                                    Нужно собрать базу клиентов для дальнейшей работы.</span></span></p>
+
+                                <p><strong>Задача</strong>: снизить стоимость заявки, увеличить их количество в рамках
+                                    бюджета, увеличить рентабельность рекламы</span></p>
+
+                                <p><strong>Решение</strong>: Создали новый Мультилендинг по сегментам семантического
+                                    ядра и настроили новые компании в Директе, на 110 сегментов по портретам клиента.
+                                    Подключили Ройстат для отслеживания и анализа рекламы. АмоCrm клиент уже
+                                    использовал.</span></p>
+
+                                <p><strong>Итог</strong>: стоимость заявки уменьшилась в 4 раза с 4555 р. до 1102 р. По
+                                    итогам анализа , перераспределили бюджет по сегментам, что увеличило конверсию в
+                                    продажи с 15 до 24%, стоимость продажи снизилась с 18 827 до 7 290 р. Выручка
+                                    увеличилось 3,3 раза.
+                                    Средний чек вырос на 22%. </span></p>
+
+                                <p>На основании этого анализа, были созданы Рекламные кампании в Гугл Адводс и Авито,
+                                    рентабельность которых составила 180% и 2767% сразу после запуска.</span></p>
+
+                                <p><strong>В данный момент</strong> собрана огромная база клиентов, по которой идет
+                                    ежемесячная e-mail рассылка. В данный момент компания не расходует средства на
+                                    рекламу, т.к. их клиенты постоянные, а рассылка приносит гораздо больше прибыли,
+                                    чем реклама))</span></p>
+
+                                <p>За счет этого, компания экономит более 350 000 руб. в месяц за счет отсутствия
+                                    расходов на рекламу и зарплату дополнительных сотрудников.</span></p>
+
+
+                                <p><strong>Наши услуги окупились за 1 месяц</strong></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+
+                        <div class="content">
+                            <div class="name">
+
+                                <p style="color: rgb(255, 255, 255); font-size: 20px; line-height: 20px; font-family: Roboto, sans-serif; font-weight: 300; text-align: center;"><strong><span
+                                            style="color:#000000;">Как заработать 970 000 руб. за 2 месяца
+                                            на установке систем видеонаблюдения</span></strong></p>
+                                <div class="img"><img src="//media.lpgenerator.ru/images/319440/postera_5JemV99.jpg"
+                                        width="300" height="212"></div>
+
+                            </div>
+                            <div class="text">
+
+                                <p><strong>Ситуация</strong>:
+                                            СНужно срочно увеличь продажи в компании по установке видеонаблюдения.</p>
+
+                                <p><strong>Задача</strong>: Привлечь больше клиентов, снизить стоимость заявки,
+                                    уменьшить цикл сделки, снизить расходы на рекламу</span></p>
+
+                                <p><strong>Решение</strong>: Собрали семантическое ядро на 23 000 ключевых слов,
+                                    разработали Мульти Лендинг с подменой заголовков на 32 сегмента целевой аудитории,
+                                    запустили трафик в Директе и Авито.</span></p>
+
+                                <p><strong>Подключили AmoCrm</strong>: для учета клиентов и бизнес аналитику Ройстат,
+                                    что позволило выявить самые прибыльные сегменты аудитории менее чем за 1 месяц. За
+                                    это время провели A/B тест, и увеличили конверсию сайта с 5 до 14% по прямым
+                                    запросам. Через месяц отключили более половины кампаний с минимальной прибылью и
+                                    увеличили бюджеты на прибыльные.</span></p>
+
+                                <p> Сделали продающее КП для выездных инженеров, разработали скрипты для менеджера по
+                                    продажам.</span></p>
+
+                                <p><strong>Итог</strong>: За 2 месяца работы, стоимость заявки уменьшилась в 5 раз с
+                                    2100 до 520 р. Рекламный бюджет снижен в 3 раза, сократили цикл сделки с 31 до 22
+                                    дней, увеличили чек на 32%. </strong></span></p>
+
+                                <p> В дальнейшем, ставками в рекламе управляет автомат по ROI, компании переданы
+                                    собственному специалисту.</span></p>
+
+                                <p><strong>Стоимость проекта 148 000 р. Наши услуги окупились за 1,5 месяца</strong></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <a class="next browse right"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
